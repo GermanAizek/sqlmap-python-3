@@ -46,7 +46,7 @@ To get an overview of sqlmap capabilities, list of supported features and descri
 Links
 ----
 
-* Telegram: @germanaizek
+* Telegram: https://telegram.org/germanaizek (@germanaizek)
 * VK: https://vk.com/germanaizek
 * Homepage: http://sqlmap.org
 * Download: [.tar.gz](https://github.com/sqlmapproject/sqlmap/tarball/master) or [.zip](https://github.com/sqlmapproject/sqlmap/zipball/master)
@@ -73,4 +73,4 @@ Translations
 * [Portuguese](https://github.com/sqlmapproject/sqlmap/blob/master/doc/translations/README-pt-BR.md)
 * [Spanish](https://github.com/sqlmapproject/sqlmap/blob/master/doc/translations/README-es-MX.md)
 * [Turkish](https://github.com/sqlmapproject/sqlmap/blob/master/doc/translations/README-tr-TR.md)
-* [Turkish]() - I will soon translate and make pull request
+* [Russian]() - I will soon translate and make pull request
