@@ -1,11 +1,11 @@
 # sqlmap
 
 [![Build Status](https://api.travis-ci.org/sqlmapproject/sqlmap.svg?branch=master)](https://api.travis-ci.org/sqlmapproject/sqlmap)
-[![Python 3.6](https://img.shields.io/badge/python-2.6|2.7-yellow.svg)](https://www.python.org/)
+[![Python 3.6](https://img.shields.io/badge/python-3.6-yellow.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-GPLv2-red.svg)](https://raw.githubusercontent.com/sqlmapproject/sqlmap/master/LICENSE) [![Twitter](https://img.shields.io/badge/twitter-@sqlmap-blue.svg)](https://twitter.com/sqlmap)
-[![VK](https://img.shields.io/badge/twitter-@sqlmap-blue.svg)](https://vk.com/germanaizek)
+[![VK](https://img.shields.io/badge/VK-GermanAizek-blue.svg)](https://vk.com/germanaizek)
 
-Port by GermanAizek. Original repositories: [![Original](https://img.shields.io/badge/twitter-@sqlmap-green.svg)](https://github.com/sqlmapproject/sqlmap)
+Port by GermanAizek. Original repositories: [![Original](https://img.shields.io/badge/GitHub-sqlmap-green.svg)](https://github.com/sqlmapproject/sqlmap)
 
 sqlmap is an open source penetration testing tool that automates the process of detecting and exploiting SQL injection flaws and taking over of database servers. It comes with a powerful detection engine, many niche features for the ultimate penetration tester and a broad range of switches lasting from database fingerprinting, over data fetching from the database, to accessing the underlying file system and executing commands on the operating system via out-of-band connections.
 
@@ -27,7 +27,7 @@ Preferably, you can download sqlmap by cloning the [Git](https://github.com/sqlm
 
     git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
 
-sqlmap works out of the box with [Python](http://www.python.org/download/) version **2.6.x** and **2.7.x** on any platform.
+sqlmap works out of the box with [Python](http://www.python.org/download/) version **3.6.x** on any platform.
 
 Usage
 ----
@@ -46,6 +46,8 @@ To get an overview of sqlmap capabilities, list of supported features and descri
 Links
 ----
 
+* Telegram: @germanaizek
+* VK: https://vk.com/germanaizek
 * Homepage: http://sqlmap.org
 * Download: [.tar.gz](https://github.com/sqlmapproject/sqlmap/tarball/master) or [.zip](https://github.com/sqlmapproject/sqlmap/zipball/master)
 * Commits RSS feed: https://github.com/sqlmapproject/sqlmap/commits/master.atom
@@ -71,3 +73,4 @@ Translations
 * [Portuguese](https://github.com/sqlmapproject/sqlmap/blob/master/doc/translations/README-pt-BR.md)
 * [Spanish](https://github.com/sqlmapproject/sqlmap/blob/master/doc/translations/README-es-MX.md)
 * [Turkish](https://github.com/sqlmapproject/sqlmap/blob/master/doc/translations/README-tr-TR.md)
+* [Turkish]() - I will soon translate and make pull request
