@@ -1,0 +1,8 @@
+language: python
+sudo: false
+git:
+    depth: 1
+python:
+    - "3.6"
+script:
+    - python -c "import sqlmap; import sqlmapapi"
