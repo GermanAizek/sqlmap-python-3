@@ -54,7 +54,18 @@ class _ThreadData(threading.local):
         self.lastRequestMsg = None
         self.lastRequestUID = 0
         self.lastRedirectURL = None
-        self.random = random.WichmannHill()
+
+        # Python 2
+        # self.random = random.WichmannHill()
+        # TODO: write alternate generator Wichmann Hill
+
+        ### class random.WichmannHill([seed])
+        # Class that implements the Wichmann-Hill algorithm as the core generator. Has all of the same methods as Random plus the whseed() method described below.
+        # Because this class is implemented in pure Python, it is not threadsafe and may require locks between calls.
+        # The period of the generator is 6,953,607,871,644 which is small enough to require care that two independent random sequences do not overlap.
+        #
+
+        self.random = random.SystemRandom()
         self.resumed = False
         self.retriesCount = 0
         self.seqMatcher = difflib.SequenceMatcher(None)
