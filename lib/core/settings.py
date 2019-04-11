@@ -208,14 +208,14 @@ DEFAULT_PAGE_ENCODING = "iso-8859-1"
 
 try:
     str(DEFAULT_PAGE_ENCODING, DEFAULT_PAGE_ENCODING)
-except LookupError:
+except TypeError:
     DEFAULT_PAGE_ENCODING = "utf8"
 
 # URL used in dummy runs
 DUMMY_URL = "http://foo/bar?id=1"
 
 # System variables
-IS_WIN = subprocess.mswindows
+IS_WIN = subprocess._mswindows
 
 # The name of the operating system dependent module imported. The following names have currently been registered: 'posix', 'nt', 'mac', 'os2', 'ce', 'java', 'riscos'
 PLATFORM = os.name

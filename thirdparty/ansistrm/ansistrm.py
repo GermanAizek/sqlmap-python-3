@@ -9,7 +9,7 @@ import sys
 
 from lib.core.convert import stdoutencode
 
-if subprocess.mswindows:
+if subprocess._mswindows:
     import ctypes
     import ctypes.wintypes
 
@@ -71,7 +71,7 @@ class ColorizingStreamHandler(logging.StreamHandler):
         except:
             self.handleError(record)
 
-    if not subprocess.mswindows:
+    if not subprocess._mswindows:
         def output_colorized(self, message):
             self.stream.write(message)
     else:

@@ -16,7 +16,7 @@ BEEP_WAV_FILENAME = os.path.join(os.path.dirname(__file__), "beep.wav")
 
 def beep():
     try:
-        if subprocess.mswindows:
+        if subprocess._mswindows:
             _win_wav_play(BEEP_WAV_FILENAME)
         elif sys.platform == "darwin":
             _mac_beep()

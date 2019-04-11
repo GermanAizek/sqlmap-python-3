@@ -37,7 +37,7 @@ def setNonBlocking(fd):
     fcntl.fcntl(fd, fcntl.F_SETFL, flags)
 
 def main(src, dst):
-    if subprocess.mswindows:
+    if subprocess._mswindows:
         sys.stderr.write('icmpsh master can only run on Posix systems\n')
         sys.exit(255)
 
