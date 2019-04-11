@@ -20,7 +20,7 @@ License along with this library; if not, write to the Free Software
 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 """
 
-import mimetools
+import email
 import mimetypes
 import os
 import stat
@@ -75,7 +75,7 @@ class MultipartPostHandler(urllib.request.BaseHandler):
 
     def multipart_encode(vars, files, boundary=None, buf=None):
         if boundary is None:
-            boundary = mimetools.choose_boundary()
+            boundary = email._make_boundary()
 
         if buf is None:
             buf = ""

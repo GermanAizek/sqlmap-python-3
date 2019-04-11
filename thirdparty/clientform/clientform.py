@@ -66,11 +66,6 @@ __all__ = ['AmbiguityError', 'CheckboxControl', 'Control',
            'SubmitButtonControl', 'SubmitControl', 'TextControl',
            'TextareaControl', 'XHTMLCompatibleFormParser']
 
-try: True
-except NameError:
-    True = 1
-    False = 0
-
 try: bool
 except NameError:
     def bool(expr):
@@ -104,7 +99,7 @@ else:
         handler.setLevel(logging.DEBUG)
         _logger.addHandler(handler)
 
-import sys, urllib.request, urllib.parse, urllib.error, urllib.request, urllib.error, urllib.parse, types, mimetools, copy, urllib.parse, \
+import sys, urllib.request, urllib.parse, urllib.error, urllib.request, urllib.error, urllib.parse, types, email, copy, urllib.parse, \
        html.entities, re, random
 from io import StringIO
 
