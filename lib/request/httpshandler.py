@@ -102,5 +102,5 @@ class HTTPSHandler(urllib.request.HTTPSHandler):
 def _(self, *args):
     return self._readline()
 
-http.client.LineAndFileWrapper._readline = http.client.LineAndFileWrapper.readline
-http.client.LineAndFileWrapper.readline = _
+#http.client.LineAndFileWrapper._readline = http.client.LineAndFileWrapper.readline
+#http.client.LineAndFileWrapper.readline = _
