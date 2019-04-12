@@ -925,7 +925,7 @@ def dataToStdout(data, forceOutput=False, bold=False, content_type=None, status=
                 if conf.get("api"):
                     sys.stdout.write(message, status, content_type)
                 else:
-                    sys.stdout.write(setColor(message, bold))
+                    sys.stdout.write(setColor(message, bold).decode('utf-8'))
 
                 sys.stdout.flush()
             except IOError:
@@ -2735,7 +2735,7 @@ def extractRegexResult(regex, content, flags=0):
     retVal = None
 
     if regex and content and "?P<result>" in regex:
-        match = re.search(regex, content, flags)
+        match = re.search(regex, content.decode('utf-8'), flags)
 
         if match:
             retVal = match.group("result")
