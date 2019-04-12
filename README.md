@@ -1,7 +1,7 @@
 # sqlmap
 
-[![Build Status](https://api.travis-ci.org/sqlmapproject/sqlmap.svg?branch=master)](https://api.travis-ci.org/sqlmapproject/sqlmap)
-[![Python 3.6](https://img.shields.io/badge/python-3.6-yellow.svg)](https://www.python.org/)
+[![Build Status](https://api.travis-ci.org/sqlmapproject/sqlmap.svg?branch=master)](https://api.travis-ci.org/GermanAizek/sqlmap-python-3)
+[![Python 3](https://img.shields.io/badge/python-3-yellow.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-GPLv2-red.svg)](https://raw.githubusercontent.com/sqlmapproject/sqlmap/master/LICENSE) [![Twitter](https://img.shields.io/badge/twitter-@sqlmap-blue.svg)](https://twitter.com/sqlmap)
 
 [![VK](https://img.shields.io/badge/VK-GermanAizek-blue.svg)](https://vk.com/germanaizek)
@@ -28,16 +28,20 @@ Installation
 
 You can download the latest tarball by clicking [here](https://github.com/sqlmapproject/sqlmap/tarball/master) or latest zipball by clicking  [here](https://github.com/sqlmapproject/sqlmap/zipball/master).
 
-Preferably, you can download sqlmap by cloning the [Git](https://github.com/sqlmapproject/sqlmap) repository:
+* Usage in Windows (if not python exists in ADD_PATH) or Ubuntu, MacOS
 
-    git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
+Preferably, you can download sqlmap by cloning the [Git](https://github.com/GermanAizek/sqlmap.git) repository:
 
-sqlmap works out of the box with [Python](http://www.python.org/download/) version **3.6.x** on any platform.
+    git clone https://github.com/GermanAizek/sqlmap-python-3.git
+    cd sqlmap-python-3
+    pip install -r requirements.txt
+    
+sqlmap works out of the box with [Python](http://www.python.org/download/) version **3.x** on any platform.
 
 Usage
 ----
 
-* Usage in Windows (if not python exists in ADD_PATH)
+* Usage in any platform (Windows: if not python exists in ADD_PATH)
 
 To get a list of basic options and switches use:
 
@@ -50,6 +54,8 @@ To get a list of all options and switches use:
 In Windows PowerShell:
 
     python .\sqlmap.py
+    
+*Caution do not confuse python3 or python
 
 You can find a sample run [here](https://asciinema.org/a/46601).
 To get an overview of sqlmap capabilities, list of supported features and description of all options and switches, along with examples, you are advised to consult the [user's manual](https://github.com/sqlmapproject/sqlmap/wiki/Usage).
@@ -57,8 +63,6 @@ To get an overview of sqlmap capabilities, list of supported features and descri
 Links
 ----
 
-* Telegram: https://telegram.org/germanaizek (@germanaizek)
-* VK: https://vk.com/germanaizek
 * Homepage: http://sqlmap.org
 * Download: [.tar.gz](https://github.com/sqlmapproject/sqlmap/tarball/master) or [.zip](https://github.com/sqlmapproject/sqlmap/zipball/master)
 * Commits RSS feed: https://github.com/sqlmapproject/sqlmap/commits/master.atom
