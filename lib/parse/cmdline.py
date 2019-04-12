@@ -807,6 +807,9 @@ def cmdLineParser(argv=None):
                 raise SqlmapSyntaxException("something went wrong during command line parsing ('%s')" % ex.message)
 
         for i in range(len(argv)):
+            # dev: debug mode
+            if argv[i] == "-debug":
+                import pdb; pdb.set_trace()
             if argv[i] == "-hh":
                 argv[i] = "-h"
             elif len(argv[i]) > 1 and all(ord(_) in range(0x2018, 0x2020) for _ in ((argv[i].split('=', 1)[-1].strip() or ' ')[0], argv[i][-1])):
