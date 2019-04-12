@@ -442,12 +442,17 @@ class ItemNotFoundError(LocateError): pass
 
 class ItemCountError(ValueError): pass
 
+# Restore HTMLParseError
+# create a dummy class for Python 3.5+ where it's been removed
+class HTMLParseError(Exception):
+    pass
+
 # for backwards compatibility, ParseError derives from exceptions that were
 # raised by versions of ClientForm <= 0.2.5
 if HAVE_MODULE_HTMLPARSER:
     SGMLLIB_PARSEERROR = sgmllib.SGMLParseError
     class ParseError(sgmllib.SGMLParseError,
-                     html.parser.HTMLParseError,
+                     HTMLParseError,
                      ):
         pass
 else:
