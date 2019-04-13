@@ -1,12 +1,11 @@
 # sqlmap
 
-## Status
+**Service** | **Status**
+------------ | -------------
+**Azure:** | [![Build Status](https://dev.azure.com/GermanAizek/sqlmap3/_apis/build/status/GermanAizek.sqlmap-python-3?branchName=master)](https://dev.azure.com/GermanAizek/sqlmap3/_build/latest?definitionId=1&branchName=master)
+**Travis CI:** | [![Build Status](https://api.travis-ci.org/sqlmapproject/sqlmap.svg?branch=master)](https://api.travis-ci.org/GermanAizek/sqlmap-python-3)
 
-**Azure:** [![Build Status](https://dev.azure.com/GermanAizek/sqlmap3/_apis/build/status/GermanAizek.sqlmap-python-3?branchName=master)](https://dev.azure.com/GermanAizek/sqlmap3/_build/latest?definitionId=1&branchName=master)
-
-**Travis CI:** [![Build Status](https://api.travis-ci.org/sqlmapproject/sqlmap.svg?branch=master)](https://api.travis-ci.org/GermanAizek/sqlmap-python-3)
-
-# Contacts
+### Contacts
 
 [![Python 3](https://img.shields.io/badge/python-3-yellow.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-GPLv2-red.svg)](https://raw.githubusercontent.com/sqlmapproject/sqlmap/master/LICENSE) [![Twitter](https://img.shields.io/badge/twitter-@sqlmap-blue.svg)](https://twitter.com/sqlmap)
