@@ -2585,7 +2585,7 @@ def urldecode(value, encoding=None, unsafe="%%&=;+%s" % CUSTOM_INJECTION_MARK_CH
                 result = re.sub(r"%([0-9a-fA-F]{2})", _, result)
 
     if isinstance(result, str):
-        result = str(result, encoding or UNICODE_ENCODING, "replace")
+        result = result + str(encoding or UNICODE_ENCODING) # [Python 2.x] , "replace")
 
     return result
 

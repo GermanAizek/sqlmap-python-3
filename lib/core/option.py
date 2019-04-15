@@ -1757,7 +1757,7 @@ def _cleanupOptions():
         conf.code = int(conf.code)
 
     if conf.csvDel:
-        conf.csvDel = conf.csvDel.decode("string_escape")  # e.g. '\\t' -> '\t'
+        conf.csvDel = conf.csvDel # [Python 2.x] .decode("string_escape")  # e.g. '\\t' -> '\t'
 
     if conf.torPort and isinstance(conf.torPort, str) and conf.torPort.isdigit():
         conf.torPort = int(conf.torPort)
@@ -1810,8 +1810,8 @@ def _cleanupEnvironment():
     Cleanup environment (e.g. from leftovers after --sqlmap-shell).
     """
 
-    if issubclass(urllib2.socket.socket, socks.socksocket):
-        socks.unwrapmodule(urllib2)
+    if issubclass(urllib.request.socket.socket, socks.socksocket):
+        socks.unwrapmodule(urllib.request)
 
     if hasattr(socket, "_ready"):
         socket._ready.clear()
