@@ -893,7 +893,7 @@ def checkFalsePositives(injection):
 
         kb.injection = injection
 
-        for i in range(conf.level):
+        for _ in range(conf.level):
             while True:
                 randInt1, randInt2, randInt3 = (_() for j in range(3))
 
