@@ -2,6 +2,7 @@
 
 **Service** | **Status**
 ------------ | -------------
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/14c98411d49b422f908fed0d02842cdb)](https://app.codacy.com/app/GermanAizek/sqlmap-python-3?utm_source=github.com&utm_medium=referral&utm_content=GermanAizek/sqlmap-python-3&utm_campaign=Badge_Grade_Dashboard)
 **Azure:** | [![Build Status](https://dev.azure.com/GermanAizek/sqlmap3/_apis/build/status/GermanAizek.sqlmap-python-3?branchName=master)](https://dev.azure.com/GermanAizek/sqlmap3/_build/latest?definitionId=1&branchName=master)
 **Travis CI:** | [![Build Status](https://api.travis-ci.org/sqlmapproject/sqlmap.svg?branch=master)](https://api.travis-ci.org/GermanAizek/sqlmap-python-3)
 
