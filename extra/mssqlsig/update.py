@@ -9,7 +9,6 @@ import codecs
 import os
 import re
 import urllib.request, urllib.error, urllib.parse
-import urllib.parse
 
 from xml.dom.minidom import Document
 
