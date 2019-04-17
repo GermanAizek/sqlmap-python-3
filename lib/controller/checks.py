@@ -1542,7 +1542,7 @@ def checkConnection(suppressOutput=False):
 
     try:
         kb.originalPageTime = time.time()
-        page, headers, _ = Request.queryPage(content=True, noteResponseTime=False)
+        page, _, _ = Request.queryPage(content=True, noteResponseTime=False)
         kb.originalPage = kb.pageTemplate = page
 
         kb.errorIsNone = False
