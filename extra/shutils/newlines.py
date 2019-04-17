@@ -4,7 +4,7 @@
 # Reference: http://rowinggolfer.blogspot.com/2009/08/pylint-recursively.html
 
 import os
-import re
+#import re
 import sys
 
 def check(filepath):
