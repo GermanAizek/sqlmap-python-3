@@ -11,7 +11,6 @@ import re
 import subprocess
 import string
 import sys
-import types
 
 from lib.core.datatype import AttribDict
 from lib.core.enums import DBMS
