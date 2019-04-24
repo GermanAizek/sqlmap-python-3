@@ -21,7 +21,6 @@ import tempfile
 import threading
 import time
 import urllib.request, urllib.error, urllib.parse
-import urllib.parse
 
 import lib.controller.checks
 import lib.core.common
@@ -1823,8 +1822,8 @@ def _dirtyPatches():
 
     http.client._MAXLINE = 1 * 1024 * 1024                          # accept overly long result lines (e.g. SQLi results in HTTP header responses)
 
-    if IS_WIN:
-        from thirdparty.wininetpton import win_inet_pton        # add support for inet_pton() on Windows OS
+    #if IS_WIN:
+    #    from thirdparty.wininetpton import win_inet_pton        # add support for inet_pton() on Windows OS
 
 def _purgeOutput():
     """
