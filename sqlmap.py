@@ -23,7 +23,6 @@ import logging
 import os
 import re
 import shutil
-import sys
 import _thread
 import threading
 import time
