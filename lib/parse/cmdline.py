@@ -888,7 +888,7 @@ def cmdLineParser(argv=None):
         # Protection against Windows dummy double clicking
         if IS_WIN:
             dataToStdout("\nPress Enter to continue...")
-            eval(input())
+            input()
         raise
 
     debugMsg = "parsing command line"
