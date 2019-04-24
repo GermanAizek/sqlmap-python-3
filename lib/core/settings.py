@@ -32,13 +32,18 @@ ZIPBALL_PAGE = "https://github.com/sqlmapproject/sqlmap/zipball/master"
 
 # colorful banner
 BANNER = """\033[01;33m\
+===============================================================================
         ___
-       __H__
- ___ ___[.]_____ ___ ___  \033[01;37m{\033[01;%dm%s\033[01;37m}\033[01;33m
-|_ -| . [.]     | .'| . |
-|___|_  [.]_|_|_|__,|  _|
-      |_|V          |_|   \033[0m\033[4;37m%s\033[0m\n
-""" % (TYPE_COLORS.get(TYPE, 31), VERSION_STRING.split('/')[-1], SITE)
+       __H__             ___
+ ___ ___[.]_____ ___ ___|__ | \033[01;37m{\033[01;%dm%s\033[01;37m}\033[01;33m
+|_ -| . [.]     | .'| . |__ |     
+|___|_  [.]_|_|_|__,|  _|___|      
+      |_|V          |_|       \033[0m\033[4;37m%s\033[0m\n
+
+\033[01;33m      PORT BY GERMANAIZEK
+
+===============================================================================
+\033[0m\n""" % (TYPE_COLORS.get(TYPE, 31), VERSION_STRING.split('/')[-1], SITE)
 
 # Minimum distance of ratio from kb.matchRatio to result in True
 DIFF_TOLERANCE = 0.05
