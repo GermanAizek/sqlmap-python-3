@@ -232,7 +232,7 @@ class AnsiToWin32(object):
 
 
     def convert_osc(self, text):
-        for match in self.ANSI_OSC_RE.finditer(text):
+        for match in self.ANSI_OSC_RE.finditer(text).decode('utf-8'):
             start, end = match.span()
             text = text[:start] + text[end:]
             paramstring, command = match.groups()
