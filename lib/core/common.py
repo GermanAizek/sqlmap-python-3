@@ -925,7 +925,7 @@ def dataToStdout(data, forceOutput=False, bold=False, content_type=None, status=
                 if conf.get("api"):
                     sys.stdout.write(message, status, content_type)
                 else:
-                    sys.stdout.write(setColor(message, bold))
+                    sys.stdout.write(setColor(message, bold).decode('utf-8'))
 
                 sys.stdout.flush()
             except IOError:
